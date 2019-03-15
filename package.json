@@ -4,7 +4,7 @@
   "author": "Torus",
   "description": "Relax and sleep with custom mixes of ambient nature sounds",
   "homepage": "https://newplan.io/torus",
-  "license": "GPL-3.0-only",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
