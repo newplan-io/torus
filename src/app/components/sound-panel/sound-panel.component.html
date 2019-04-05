@@ -1,0 +1,10 @@
+<ion-card [ngClass]="{'playing':sound.playing}">
+    <ion-card-header>
+        <ion-card-title>
+            <ion-icon (click)="sound.toggle()" name="{{ sound.icon }}"></ion-icon>
+        </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-range color="primary" pin="true" [(ngModel)]="sound.volume"></ion-range>
+    </ion-card-content>
+</ion-card>

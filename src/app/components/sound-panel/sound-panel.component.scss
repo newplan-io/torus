@@ -1,0 +1,19 @@
+ion-card {
+    cursor: pointer;
+}
+
+ion-card ion-card-title ion-icon {
+    color: #CCC;
+}
+
+ion-card.playing ion-card-title ion-icon {
+    color: var(--ion-color-primary);
+}
+
+ion-card-title {
+    text-align: center;
+}
+
+ion-card-title ion-icon {
+    font-size: 60px;
+}

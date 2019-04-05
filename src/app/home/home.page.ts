@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SoundService } from '../services/sound.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  readonly sounds: SoundService[] = [
+    new SoundService('assets/sounds/rain_light.webm', 'rainy'),
+    new SoundService('assets/sounds/rain_thunders.webm', 'thunderstorm')
+  ];
 
+  constructor() {
+  }
 }
