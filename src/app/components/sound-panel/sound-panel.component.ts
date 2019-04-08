@@ -14,4 +14,12 @@ export class SoundPanelComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  public toggle(): void {
+    if (this.sound.playing) {
+      this.sound.stop();
+    } else {
+      this.sound.play();
+    }
+}
 }

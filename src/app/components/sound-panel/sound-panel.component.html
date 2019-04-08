@@ -1,7 +1,7 @@
 <ion-card [ngClass]="{'playing':sound.playing}">
     <ion-card-header>
         <ion-card-title>
-            <ion-icon (click)="sound.toggle()" name="{{ sound.icon }}"></ion-icon>
+            <ion-icon (click)="toggle()" name="{{ sound.icon }}"></ion-icon>
         </ion-card-title>
     </ion-card-header>
     <ion-card-content>

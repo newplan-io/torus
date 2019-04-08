@@ -25,14 +25,6 @@ export class SoundService {
         this._playing = false;
     }
 
-    public toggle(): void {
-        if (this.playing) {
-            this.stop();
-        } else {
-            this.play();
-        }
-    }
-
     public get playing(): boolean {
         return this._playing;
     }
