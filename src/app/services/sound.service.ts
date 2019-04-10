@@ -49,6 +49,8 @@ export class SoundService {
 
   public save() {
     LocalStorage.setJSON<SoundServiceConfig>(this._src, this.config);
+
+    console.log('Update chromecast!', {src: this._src, ...this.config});
   }
 
   public get config(): SoundServiceConfig {
