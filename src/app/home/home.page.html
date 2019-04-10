@@ -1,11 +1,26 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Torus</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cast()">CAST</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+-->
 <ion-content>
-  <ion-content>
-    <ion-grid>
-      <ion-row>
-        <ion-col *ngFor="let sound of sounds" size-xs="6" size-sm="6" size-md="3" size-lg="2">
-          <sound-panel [sound]="sound"></sound-panel>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
+  <!--
+    <ion-list>
+    <ion-item *ngFor="let sound of sounds">
+      <sound-panel [sound]="sound"></sound-panel>
+    </ion-item>
+  </ion-list>
+  -->
+  <ion-list>
+    <ion-item *ngFor="let sound of sounds">
+      <ion-icon src="{{ sound.icon }}"></ion-icon>
+      <ion-range [disabled]="!sound.playing" color="primary" pin="true" [(ngModel)]="sound.volume"></ion-range>
+      <ion-toggle (click)="toggle(sound)" [(ngModel)]="sound.playing" slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
 </ion-content>

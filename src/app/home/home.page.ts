@@ -36,4 +36,16 @@ export class HomePage {
 
   constructor() {
   }
+
+  cast() {
+    this.sounds.forEach(sound => sound.save());
+  }
+
+  toggle(sound: SoundService) {
+    if (sound.playing) {
+      sound.stop();
+    } else {
+      sound.play();
+    }
+  }
 }
