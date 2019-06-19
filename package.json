@@ -3,15 +3,11 @@
   "version": "0.0.1",
   "author": "Torus",
   "description": "Relax and sleep with custom mixes of ambient nature sounds",
-  "homepage": "https://newplan.io/torus",
+  "homepage": "https://newplan.io/torus/",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build": "ionic build --prod",
+    "deploy": "ngh --dir www"
   },
   "private": true,
   "dependencies": {
